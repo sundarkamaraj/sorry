@@ -1,0 +1,174 @@
+/* Full Screen Background */
+body{
+    margin:0;
+    min-height:100vh;
+
+    background-image:url('IMG_2224.JPG.jpeg');
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+}
+
+/* Main Content */
+.overlay{
+    width:100%;
+    text-align:center;
+    padding-top:50px;
+}
+
+/* Main Heading */
+h1{
+    font-size:4rem;
+    font-weight:700;
+
+    color:white;
+
+    text-shadow:
+        2px 2px 15px rgba(0,0,0,0.8),
+        0 0 25px hotpink;
+
+    margin-bottom:40px;
+}
+
+/* Proposal Text */
+h2{
+    font-size:3rem;
+    font-weight:600;
+
+    color:white;
+
+    text-shadow:
+        2px 2px 15px rgba(0,0,0,0.8),
+        0 0 20px hotpink;
+
+    margin-top:40px;
+}
+
+/* Gallery */
+.gallery{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+/* Images */
+.gallery img{
+    width:280px;
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    box-shadow:
+        0 0 30px rgba(255,255,255,0.9);
+
+    transition:0.4s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+
+    box-shadow:
+        0 0 50px hotpink;
+}
+
+/* Buttons */
+button{
+    margin:20px;
+
+    padding:18px 50px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:24px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #ff4d6d,
+        #ff85a1
+    );
+
+    box-shadow:
+        0 8px 25px rgba(255,77,109,0.6);
+
+    transition:0.3s ease;
+}
+
+button:hover{
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 12px 35px rgba(255,77,109,0.9);
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    h1{
+        font-size:4.2rem;
+    }
+
+    h2{
+        font-size:1.8rem;
+    }
+
+    .gallery img{
+        width:180px;
+        height:180px;
+    }
+
+    button{
+        width:80%;
+        font-size:20px;
+    }
+}
+@media (max-width:768px){
+
+    .overlay{
+        padding-top:15px;
+    }
+
+    h1{
+        font-size:2.5rem;
+        margin-bottom:15px;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    .gallery img{
+        width:180px;
+        height:180px;
+    }
+
+    button{
+        width:85%;
+        font-size:18px;
+        padding:15px;
+    }
+
+    .love-message{
+        font-size:20px;
+        width:90%;
+    }
+}
+
+
